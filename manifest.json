@@ -1,0 +1,19 @@
+{
+    // Comments are accepted in the manifest, even though it is JSON.
+    "manifest_version": 3,
+    "name": "Google Translator Proxy",
+    "description": "Unblock text sites using google translate site engine.",
+    "version": "1.0.0",
+    "icons": {
+        "16": "logo/favicon-16x16.png",
+        "32": "logo/favicon-32x32.png",
+        "128": "logo/favicon-128.png"
+    },
+    "action": {
+      "default_title": "Click to unblock this site!"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+        "service_worker": "service-worker.js"
+    }
+}
